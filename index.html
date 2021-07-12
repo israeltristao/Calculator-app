@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app.css">
+
+  <title>Frontend Mentor | Calculator app</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(227, 93%, 89%);
+    }
+  </style>
+</head>
+
+<body class="theme1">
+  <div class="container">
+    <div class="calc-theme">
+      <div class="calc">calc</div>
+      <div class="theme">
+        <div class="theme-word">THEME</div>
+        <div class="toggle-grid">
+          <div class="toggle-number">1</div>
+          <div class="toggle-number">2</div>
+          <div class="toggle-number">3</div>
+          <div class="bar">
+            <div class="red-dot"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="display">0</div>
+    <div class="keys">
+      <button class="key-plus" data-action="add">+</button>
+      <button class="key-minus" data-action="subtract">-</button>
+      <button class="key-times" data-action="multiply">&times;</button>
+      <button class="key-divide" data-action="divide">/</button>
+      <button class="key-7">7</button>
+      <button class="key-8">8</button>
+      <button class="key-9">9</button>
+      <button class="key-4">4</button>
+      <button class="key-5">5</button>
+      <button class="key-6">6</button>
+      <button class="key-1">1</button>
+      <button class="key-2">2</button>
+      <button class="key-3">3</button>
+      <button class="key-0">0</button>
+      <button class="key-dot" data-action="decimal">.</button>
+      <button class="key-clear" data-action="clear">DEL</button>
+      <button class="key-equal" data-action="calculate">=</button>
+      <button class="key-reset" data-action="reset">RESET</button>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/israeltristao">Israel Tristao</a>.
+  </div>
+</body>
+<script src="app.js"></script>
+
+</html>

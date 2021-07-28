@@ -55,17 +55,19 @@ html{
 }
 
 body{
+    margin: 1em;
     background-color: var(--main-bg-color);
 }
 
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 5fr;
+    grid-template-rows: 1fr 1fr 4fr;
     row-gap: 15px;
-    height: 100vh;
-    width: 50%;
+    height: 95vh;
+    max-width: 40%;
     margin: auto;
+    justify-content: center;
 }
 
 .calc-theme{
@@ -78,7 +80,7 @@ body{
 }
 
 .calc {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: var(--text-calc-theme-result-color);
 }
 
@@ -101,7 +103,7 @@ align-items: center;}
 .bar{
 background-color: var(--toggle-keypad-bg-color);
 justify-self: stretch;
-padding: 5px;
+padding: .312em;
 grid-column: 1 / span 3;
 border-radius: 1em;
 }
@@ -116,7 +118,7 @@ transition: 0.5s;
 
 .display {
     grid-area: 2 / 1 / 3 / 2;
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--text-calc-theme-result-color);
     display: flex;
     background-color: var(--screen-bg-color);
@@ -129,10 +131,10 @@ transition: 0.5s;
     grid-area: 3 / 1 / 4 / 2;
     background-color: var(--toggle-keypad-bg-color);
     display: grid;
-    grid-gap: 15px;
+    grid-gap: .75em;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5,1fr);
-    padding: 25px;
+    padding: 1.6em;
     border-radius: 10px;
 }
 
@@ -143,7 +145,7 @@ transition: 0.5s;
 
 .key-clear {
     grid-area: 1 / 4 / 2 / 5;
-    font-size: 24px;
+    font-size: 1.3rem;
     background-color: var(--key-del-reset-bg);
     color: var(--text-reset-del-color);
     border-bottom: 3px solid var(--key-del-reset-shadow);
@@ -164,6 +166,7 @@ transition: 0.5s;
 
 .key-reset {
     grid-area: 5 / 1 / 6 / 3;
+    font-size: 1.3rem;
     background-color: var(--key-del-reset-bg);
     color: var(--text-reset-del-color);
     border-bottom: 3px solid var(--key-del-reset-shadow);
@@ -179,7 +182,7 @@ transition: 0.5s;
 button{
     font-family: "Spartan";
     border-radius: 10px;
-    font-size: 32px;
+    font-size: 2rem;
     color: var(--text-buttons-color);
     background-color: var(--key-bg);
     border: none;
@@ -202,8 +205,8 @@ button:hover{
     background-color: var(--equals-shadow);
 }
 
-@media (max-width: 750px){
-    .key-reset {
-        font-size: 25px;
+@media (min-width: 50em){
+    .keys {
+        grid-gap: 24px;
     }
 }
